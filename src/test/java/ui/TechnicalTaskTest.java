@@ -29,6 +29,6 @@ public class TechnicalTaskTest {
     static void tearDown() {
 
         Init.closeDriver();
-        //authorizationPage = null;
+        homePage = null;
     }
 }

@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: ui.TechnicalTaskTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 8.92 s <<< FAILURE! - in ui.TechnicalTaskTest
+setUp(ui.TechnicalTaskTest)  Time elapsed: 8.745 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 103.0.5060.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'iMac-Vladislav.local', ip: '192.168.0.12', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x00000001045e7129 chromedriver + 4440361
+1   chromedriver                        0x0000000104571a43 chromedriver + 3959363
+2   chromedriver                        0x000000010420edc8 chromedriver + 409032
+3   chromedriver                        0x0000000104236463 chromedriver + 570467
+4   chromedriver                        0x0000000104231dee chromedriver + 552430
+5   chromedriver                        0x000000010422e037 chromedriver + 536631
+6   chromedriver                        0x000000010426878a chromedriver + 776074
+7   chromedriver                        0x0000000104262963 chromedriver + 751971
+8   chromedriver                        0x00000001042386d5 chromedriver + 579285
+9   chromedriver                        0x0000000104239725 chromedriver + 583461
+10  chromedriver                        0x00000001045b838d chromedriver + 4248461
+11  chromedriver                        0x00000001045bc7d8 chromedriver + 4265944
+12  chromedriver                        0x00000001045c1a1f chromedriver + 4287007
+13  chromedriver                        0x00000001045bd557 chromedriver + 4269399
+14  chromedriver                        0x0000000104596b4f chromedriver + 4111183
+15  chromedriver                        0x00000001045d7dd8 chromedriver + 4378072
+16  chromedriver                        0x00000001045d7f5f chromedriver + 4378463
+17  chromedriver                        0x00000001045ee3b5 chromedriver + 4469685
+18  libsystem_pthread.dylib             0x00007fff70116109 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00007fff70111b8b thread_start + 15
+
+	at ui.TechnicalTaskTest.setUp(TechnicalTaskTest.java:19)
+

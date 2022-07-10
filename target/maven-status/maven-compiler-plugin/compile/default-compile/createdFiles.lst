@@ -1,0 +1,6 @@
+pageobjects/vacancies/VacanciesListPage.class
+pageobjects/CareersPage.class
+pageobjects/vacancies/VacancyPage.class
+common/ParentPage.class
+common/Init.class
+pageobjects/HomePage.class
