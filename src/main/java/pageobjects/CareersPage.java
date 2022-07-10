@@ -15,12 +15,11 @@ public class CareersPage extends ParentPage {
 
     public CareersPage() {
 
-        Init.getWebDriver().navigate().to("https://ctco.lv/en");
         PageFactory.initElements(Init.getWebDriver(), this);
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(vacanciesList));
     }
 
-    public VacanciesListPage navigateCareers() {
+    public VacanciesListPage navigateToVacanciesList() {
 
         clickOnElement(vacanciesList);
         return new VacanciesListPage();
