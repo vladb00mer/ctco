@@ -1,0 +1,4 @@
+pageobjects/AuthorizationPage.class
+common/ParentPage.class
+common/Init.class
+pageobjects/HomePage.class
