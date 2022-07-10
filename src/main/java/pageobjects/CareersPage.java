@@ -8,21 +8,21 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage extends ParentPage {
+public class CareersPage extends ParentPage {
 
-    @FindBy(xpath = "//a[@href = 'https://ctco.lv/careers/']")
-    private WebElement careersArea;
+    @FindBy(xpath = "//a[@href = 'https://ctco.lv/careers/vacancies/']")
+    private WebElement vacanciesList;
 
-    public HomePage() {
+    public CareersPage() {
 
         Init.getWebDriver().navigate().to("https://ctco.lv/en");
         PageFactory.initElements(Init.getWebDriver(), this);
-        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(careersArea));
+        new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(vacanciesList));
     }
 
-    public CareersPage navigateToCareers() {
+    public VacanciesListPage navigateCareers() {
 
-        clickOnElement(careersArea);
-        return new CareersPage();
+        clickOnElement(vacanciesList);
+        return new VacanciesListPage();
     }
 }
