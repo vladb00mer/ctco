@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Locale;
+
 public class VacanciesListPage extends ParentPage {
 
     @FindBy(xpath = "//h1[contains(text(), 'Vacancies')]")
@@ -22,7 +24,7 @@ public class VacanciesListPage extends ParentPage {
 
     public VacancyPage openVacancy(String vacancyName) {
 
-        Init.getWebDriver().findElement(By.xpath("//div/ul/li/a[contains(text(), '"+vacancyName+"')]"));
+        Init.getWebDriver().findElement(By.xpath("//div/ul/li/a[contains(text(), '"+vacancyName.toUpperCase(Locale.ROOT)+"')]"));
         return new VacancyPage();
     }
 }
