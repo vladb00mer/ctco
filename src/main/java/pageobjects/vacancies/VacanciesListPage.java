@@ -22,9 +22,9 @@ public class VacanciesListPage extends ParentPage {
         new WebDriverWait(Init.getWebDriver(), Init.getTimeOut()).until(ExpectedConditions.visibilityOf(vacanciesListHeader));
     }
 
-    public VacancyPage openVacancy(String vacancyName) {
+    public TestAutomationEngineerVacancyPage openVacancy() {
 
-        Init.getWebDriver().findElement(By.xpath("//div/ul/li/a[contains(text(), '"+vacancyName.toUpperCase(Locale.ROOT)+"')]"));
-        return new VacancyPage();
+        Init.getWebDriver().findElement(By.xpath("//a[href='https://ctco.lv/careers/vacancies/test-automation-engineer-3/']"));
+        return new TestAutomationEngineerVacancyPage();
     }
 }
