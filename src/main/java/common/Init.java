@@ -18,8 +18,8 @@ public class Init {
 
     public static WebDriver getWebDriver() {
 
-        //System.setProperty("webdriver.chrome.driver", "./webdrivers/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "./webdrivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./webdrivers/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "./webdrivers/chromedriver");
 
         capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("chrome");
