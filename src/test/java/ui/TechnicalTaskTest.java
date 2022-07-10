@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pageobjects.HomePage;
 
 import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
 
 @Test
 public class TechnicalTaskTest {
@@ -24,7 +23,7 @@ public class TechnicalTaskTest {
     void testSearch() {
 
         int count = homePage.navigateToCareers().navigateToVacanciesList().openVacancyTestAutomationEngineer().getVacancySkillsCount();
-        assertEquals(8, count);
+        assertEquals(28, count);
     }
 
     @AfterClass(alwaysRun = true)
