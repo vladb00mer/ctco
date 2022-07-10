@@ -1,4 +1,4 @@
-package pageobjects;
+package pageobjects.vacancies;
 
 import common.Init;
 import common.ParentPage;
